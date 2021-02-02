@@ -31,7 +31,9 @@ export default class DemoState extends Component {
         /* this.setState là phương thức có sẵn của React class component dùng để set lại giá trị của biến state và làm render lại giao diện */
 
         //Cách 2:
-        /* this.setState({isLogin: true,}) */
+        /* this.setState({isLogin: true} , 
+        callback func    
+        ) */
 
     }
 
