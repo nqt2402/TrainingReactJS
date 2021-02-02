@@ -15,7 +15,7 @@ export default class DemoState extends Component {
         if (this.state.isLogin) {
             return <a className="nav-link">Hello {this.userName}</a>
         }
-        return <button className="nav-link" onClick={(event) => {
+        return <button className="nav-link btn btn-success text-white" onClick={(event) => {
             //Khi click vào nút đăng nhập => Gọi hàm handle login
             this.handleLogin();
         }}>Đăng nhập</button>;
@@ -33,10 +33,7 @@ export default class DemoState extends Component {
         //Cách 2:
         /* this.setState({isLogin: true,}) */
 
-
     }
-
-
 
     render() {
         return (

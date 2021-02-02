@@ -12,8 +12,8 @@ function App() {
       {/* <BTLayOut /> */}
       {/* <DataBinding/> */}
       {/* <HandEvent/> */}
-      {/* <DemoState /> */}
-      <BaiTapChonXe />
+      <DemoState />
+      {/* <BaiTapChonXe /> */}
     </div>
   );
 }
