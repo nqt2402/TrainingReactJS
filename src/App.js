@@ -5,6 +5,9 @@ import DataBinding from './components/DataBindings/DataBinding';
 import HandEvent from './components/HandleEvent/HandEvent';
 import DemoState from './components/StateReact/DemoState';
 import BaiTapChonXe from './components/StateReact/BaiTapChonXe';
+import RenderWithMap from './components/RenderWithMap/RenderWithMap,';
+import BTRenderMap from './components/RenderWithMap/BTRenderMap';
+import DemoProps from './components/Props/DemoProps';
 
 function App() {
   return (
@@ -12,8 +15,11 @@ function App() {
       {/* <BTLayOut /> */}
       {/* <DataBinding/> */}
       {/* <HandEvent/> */}
-      <DemoState />
+      {/* <DemoState /> */}
       {/* <BaiTapChonXe /> */}
+      {/* <RenderWithMap/> */}
+      {/* <BTRenderMap/> */}
+      <DemoProps/>
     </div>
   );
 }
