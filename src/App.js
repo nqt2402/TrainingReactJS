@@ -19,7 +19,7 @@ function App() {
       {/* <BaiTapChonXe /> */}
       {/* <RenderWithMap/> */}
       {/* <BTRenderMap/> */}
-      <DemoProps/>
+      {/* <DemoProps/> */}
     </div>
   );
 }

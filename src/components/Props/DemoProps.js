@@ -15,6 +15,7 @@ export default class DemoProps extends Component {
                 <ThongTinSinhVien sinhVien={sv} />
             </div>
         })
+        return result;
     }
 
     //Cách truyền động
@@ -23,15 +24,7 @@ export default class DemoProps extends Component {
             <div>
                 <h3 className="text-center display-4">Thông tin sinh viên</h3>
                 <div className="row">
-                    <div className="col-4">
-                        <ThongTinSinhVien sinhVien={this.mangSinhVien[0]} />
-                    </div>
-                    <div className="col-4">
-                        <ThongTinSinhVien sinhVien={this.mangSinhVien[1]} />
-                    </div>
-                    <div className="col-4">
-                        <ThongTinSinhVien bgColor="red" sinhVien={this.mangSinhVien[2]} />
-                    </div>
+                    {this.renderSinhVien()}
                 </div>
             </div>
         )

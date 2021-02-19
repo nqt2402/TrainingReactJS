@@ -189,7 +189,7 @@ export default class BTRenderMap extends Component {
                     {/* Cách 2: */}
                     <div style={{
                         bakcgroundImage: `url('${film.hinhAnh}'), url('https://picsum.photos/150/450')`,
-backgroundPosition: 'center', backgroundSize: 'cover'
+                        backgroundPosition: 'center', backgroundSize: 'cover',
                     }}>
                         <img style={{ opacity: 0 }} height="450" width="150" className="card-img-top" src={film.hinhAnh} alt={film.hinhAnh} />
                     </div>
@@ -200,7 +200,6 @@ backgroundPosition: 'center', backgroundSize: 'cover'
                         <p className="card-text">Mã film : {film.maPhim}</p>
                         <p className="card-text">Bí danh : {film.biDanh}</p>
                         <p className="card-text">Trailer : {film.trailer}</p>
-
                         <p className="card-text">Mô tả : {film.moTa}</p>
                         {/* <div className="card-text" style={{ height: 80 }}>Mô tả : {film.moTa.length > 50 ? <p>{film.moTa.sub(0, 100)} ...</p> : <p>{film.moTa}</p>}</div> */}
 

@@ -8,6 +8,7 @@ export default class RenderWithMap extends Component {
     ]
 
     renderSinhVien = () => {
+        //Cách 1:
         // const arrJSX = [];
         // for (let index = 0; index < this.mangSinhVien.length; index++) {
         //     //Mỗi lần duyệt lấy ra 1 đối tượng sinh viên trong mảng this.mangSinhVien
