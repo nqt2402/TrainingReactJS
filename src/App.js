@@ -9,6 +9,7 @@ import RenderWithMap from './components/RenderWithMap/RenderWithMap,';
 import BTRenderMap from './components/RenderWithMap/BTRenderMap';
 import DemoProps from './components/Props/DemoProps';
 import DemoQLSP from './components/Props/DemoQLSP/DemoQLSP';
+import BTGioHangRedux from './DemoRedux/BTGioHangRedux/BTGioHangRedux';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       {/* <RenderWithMap/> */}
       {/* <BTRenderMap/> */}
       {/* <DemoProps/> */}
-      <DemoQLSP/>
+      {/* <DemoQLSP/> */}
+      <BTGioHangRedux/>
     </div>
   );
 }

@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//Cài đặt Redux
+import { Provider } from "react-redux";
+import { store } from "./redux/configStore";
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
+
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
