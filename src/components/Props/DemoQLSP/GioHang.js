@@ -29,7 +29,7 @@ export default class GioHang extends Component {
                                     <th>{spGH.soLuong * spGH.gia}</th>
                                     <th>
                                         <button onClick={() => {
-                                            removeOutOfCart(spGH)
+                                            removeOutOfCart(spGH.maSP)
                                         }} className="btn btn-danger">Xóa</button></th>
                                 </tr>
                             )

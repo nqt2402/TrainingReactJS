@@ -79,8 +79,8 @@ export default class DemoQLSP extends Component {
         this.setState({ spChiTiet: (sanPhamClick) })
     }
 
-    xoaSP = (sanPhamClick) => {
-        console.log(sanPhamClick);
+    xoaSP = (maSP) => {
+        console.log(maSP);
         // let spGH = {
         //     maSP: sanPhamClick.maSP,
         //     tenSP: sanPhamClick.tenSP,
@@ -89,11 +89,16 @@ export default class DemoQLSP extends Component {
         //     hinhAnh: sanPhamClick.hinhAnh,
         // }
         let gioHangUpdate = [...this.state.gioHang]
-        let indexSPGH = gioHangUpdate.findIndex(
-            (spTrongGH) => spTrongGH.maSP === sanPhamClick.maSP
-        );
-        console.log(indexSPGH);
-        gioHangUpdate.splice(indexSPGH, 1);
+        //Cách 1: dùng splice
+        // let indexSPGH = gioHangUpdate.findIndex(
+        //     (spTrongGH) => spTrongGH.maSP === maSP
+        // );
+        // console.log(indexSPGH);
+        // gioHangUpdate.splice(indexSPGH, 1);
+
+        //Cách 2: dùng filter
+        gioHangUpdate = gioHangUpdate.filter(spGH => spGH.maSP !== maSP);
+
         this.setState({ gioHang: gioHangUpdate })
     }
 
