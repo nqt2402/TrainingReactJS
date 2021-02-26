@@ -26,7 +26,7 @@ class GioHangRedux extends Component {
                                 <td>{item.maSP}</td>
                                 <td>{item.tenSP}</td>
                                 <td>
-                                    <img style={width = "30", height = "30"} src={item.hinhAnh} />
+                                    <img style={{width:50,height:50}} src={item.hinhAnh} />
                                 </td>
                                 <td>{item.soLuong}</td>
                                 <td>{item.gia}</td>
