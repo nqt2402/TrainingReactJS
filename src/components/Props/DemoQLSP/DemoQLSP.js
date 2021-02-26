@@ -102,12 +102,42 @@ export default class DemoQLSP extends Component {
         this.setState({ gioHang: gioHangUpdate })
     }
 
+    tangGiamSL = (maSP, soLuongTangGiam) => {
+        let gioHangUpdate = [...this.state.gioHang];
+        //b1: Tìm ra sản phẩm trong giỏ hàng dựa vào mã sản phẩm
+        let index = gioHangUpdate.findIndex(
+            spGH => spGH.maSP === maSP
+        );
+        //b2: Tăng, Giảm số lượng
+
+        if (index !== -1) {
+            //cach a.Khai
+            gioHangUpdate[index].soLuong += soLuongTangGiam;
+            if (gioHangUpdate[index].soLuong <= 0) {
+                gioHangUpdate[index].soLuong -= soLuongTangGiam;
+                return;
+            }
+
+            //cach minh
+            // if (gioHangUpdate[index].soLuong >= 1) {
+
+            //     if (soLuongTangGiam == -1) {
+            //         if (gioHangUpdate[index].soLuong == 1) { return }
+            //     }
+            //     gioHangUpdate[index].soLuong += soLuongTangGiam;
+            // }
+        };
+
+        //b3:setState cho gioHang
+        this.setState({ gioHang: gioHangUpdate });
+    }
+
     render() {
         let { tenSP, hinhAnh, manHinh, heDieuHanh, ram, rom, cameraTruoc, cameraSau } = this.state.spChiTiet;
         return (
             <div className="container">
                 <h1 className="">Giỏ hàng</h1>
-                <GioHang gioHang={this.state.gioHang} removeOutOfCart={this.xoaSP} />
+                <GioHang addItem={this.tangGiamSL} gioHang={this.state.gioHang} removeOutOfCart={this.xoaSP} />
                 <h3 className="text-center display-4">Danh Sách Sản Phẩm</h3>
                 <div className="row">
                     {this.renderSanPham()}
