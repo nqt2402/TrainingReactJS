@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class GioHang extends Component {
     render() {
-        let { gioHang } = this.props
+        let { gioHang, removeOutOfCart } = this.props
         return (
             <div className="container">
                 <div className="text-right">Giỏ hàng</div>
@@ -29,7 +29,7 @@ export default class GioHang extends Component {
                                     <th>{spGH.soLuong * spGH.gia}</th>
                                     <th>
                                         <button onClick={() => {
-                                            this.props.remove(spGH)
+                                            removeOutOfCart(spGH)
                                         }} className="btn btn-danger">Xóa</button></th>
                                 </tr>
                             )

@@ -102,7 +102,7 @@ export default class DemoQLSP extends Component {
         return (
             <div className="container">
                 <h1 className="">Giỏ hàng</h1>
-                <GioHang gioHang={this.state.gioHang} remove={this.xoaSP} />
+                <GioHang gioHang={this.state.gioHang} removeOutOfCart={this.xoaSP} />
                 <h3 className="text-center display-4">Danh Sách Sản Phẩm</h3>
                 <div className="row">
                     {this.renderSanPham()}
