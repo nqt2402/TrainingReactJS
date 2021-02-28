@@ -63,7 +63,7 @@ export default class DemoQLSP extends Component {
         //xử lí kiểm tra state giỏ hàng có chứa dữ liệu sản phẩm đó khi click hay chưa => Nếu có thì tăng số lượng, không có thì thêm vào
         // let gioHangUpdate = [...this.state.gioHang, spGH];
 
-        this.state.gioHang.push(spGH);
+        // this.state.gioHang.push(spGH);
 
         console.log(sanPhamClick);
         this.setState({

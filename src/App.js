@@ -22,8 +22,8 @@ function App() {
       {/* <RenderWithMap/> */}
       {/* <BTRenderMap/> */}
       {/* <DemoProps/> */}
-      {/* <DemoQLSP/> */}
-      <BTGioHangRedux/>
+      <DemoQLSP/>
+      {/* <BTGioHangRedux/> */}
     </div>
   );
 }
