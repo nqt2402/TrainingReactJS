@@ -1,6 +1,6 @@
 import { combineReducers, createStore } from "redux";
 import { gioHangReducer } from "./reducers/GioHangReducer";
-import { baiTapGameReducer } from "./reducers/BTGameXucXacReducer"
+import { baiTapGameReducer } from "./reducers/BTGameXucXacReducer";
 
 const rootReducer = combineReducers({
 

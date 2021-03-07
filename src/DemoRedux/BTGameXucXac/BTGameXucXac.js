@@ -9,9 +9,9 @@ class BTGameXucXac extends Component {
     renderKetQua = () => {
         let { tongDiem, ketQua } = this.props;
         return (
-            <div className="text-center display-4">
-                <p>TONG DIEM : {tongDiem}</p>
-                <p>KET QUA : {ketQua}</p>
+            <div className="ketQua text-center display-4">
+                <p>TỔNG ĐIỂM : {tongDiem}</p>
+                <p>KẾT QUẢ : {ketQua}</p>
             </div>
         )
     }
